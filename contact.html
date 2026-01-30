@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Chitrakoot Express</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PREMIUM FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<header class="home-header">
+  <div class="header-left">
+    <div class="logo-box">
+  <img 
+    src="assets/image/logo.png" 
+    alt="Chitrakoot Express Logo" 
+    class="logo-image"
+  />
+  <div class="company-slogann">Chitrakoot Express</div>
+  <div class="company-slogan">Faster • Reliable • Safer</div>
+</div>
+  </div>
+
+  <div class="header-right">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="network.html">Network</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <button class="nav-toggle" id="navToggle">☰</button>
+</header>
+
+<nav class="nav-mobile" id="navMobile">
+  <a href="index.html">Home</a>
+  <a href="about.html">About</a>
+  <a href="services.html">Services</a>
+  <a href="network.html">Network</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<section class="contact-section">
+
+  <h1 class="contact-title">Get in Touch</h1>
+  <p class="contact-subtitle">
+    For enquiries, booking, or support, contact us directly or fill the enquiry form below.
+  </p>
+
+  <div class="contact-container">
+
+    <!-- DIRECT CONTACT PANEL -->
+    <div class="contact-card">
+      <h2 class="contact-card-title">Direct Contact Numbers</h2>
+
+      <div class="contact-list">
+
+        <div class="contact-row">
+          <span class="label">Owner:</span>
+          <span class="value">+91 92774-14141, +91 95925-75938</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Head Office:</span>
+          <span class="value">+91 86996-53861</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">City Office:</span>
+          <span class="value">+91 95928-00938</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Guwahati:</span>
+          <span class="value">+91 76368-76485</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Dimapur:</span>
+          <span class="value">+91 90895-51540</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Shillong:</span>
+          <span class="value">+91 93165-75938</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Siliguri:</span>
+          <span class="value">+91 96796-28222</span>
+        </div>
+
+        <div class="contact-row">
+          <span class="label">Imphal:</span>
+          <span class="value">+91 87876-11128</span>
+        </div>
+
+      </div>
+
+      <div class="contact-address">
+        <h3>Office Addresses</h3>
+        <p><strong>Head Office:</strong><br> B-30/3528, Street No 4, Heera Nagar, Opp. Tpt Nagar, Ludhiana</p>
+        <p><strong>City Office:</strong><br> B-XI-969, Khud Mohalla Chowk, Opp. Malhotra Cement Store, Division No 3, Ludhiana</p>
+      </div>
+
+    </div>
+
+    <!-- ENQUIRY FORM -->
+   <div class="enquiry-card">
+  <h2 class="contact-card-title">Enquiry Form</h2>
+
+  <form class="enquiry-form" onsubmit="sendToWhatsApp(event)">
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <input type="text" id="name" required>
+    </div>
+
+    <div class="form-group">
+      <label>Phone Number</label>
+      <input type="tel" id="phone" required>
+    </div>
+
+    <div class="form-group">
+      <label>From (City)</label>
+      <input type="text" id="fromCity" required>
+    </div>
+
+    <div class="form-group">
+      <label>To (Destination Station)</label>
+      <input type="text" id="toStation" required>
+    </div>
+
+    <div class="form-group">
+      <label>Parcel Details</label>
+      <textarea id="parcelDetails" rows="3" placeholder="Weight, quantity, material, etc." required></textarea>
+    </div>
+
+    <button class="btn-submit">Submit Enquiry</button>
+
+  </form>
+</div>
+
+
+
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <h4>Chitrakoot Express</h4>
+      <p>Rail Parcel Services • Ludhiana</p>
+      <p>GST: 03DADPK8151E2Z0</p>
+    </div>
+    <div>
+      <h4>Offices</h4>
+      <p><strong>Head Office:</strong><br>B-30/3528, Street No 4, Heera Nagar, Opp. Tpt Nagar, Ludhiana</p>
+      <p><strong>City Office:</strong><br>B-XI-969, Khud Mohalla Chowk, Opp Malhotra Cement Store, Division No 3, Ludhiana</p>
+    </div>
+    <div>
+      <h4>Important Links</h4>
+      <a href="index.html">Home</a><br>
+      <a href="services.html">Services</a><br>
+      <a href="network.html">Delivery Network</a><br>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div>
+      <h4>Key Contacts</h4>
+      <p>Owner: +91 92774-14141</p>
+      <p>City Office: +91 95928-00938</p>
+      <p>Shillong: 93165-75938</p>
+      <p>Dimapur: 90895-51540</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    © 2025 Chitrakoot Express. All Rights Reserved.
+  </div>
+</footer>
+
+<script src="assets/script.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+<script>
+function sendToWhatsApp(event) {
+  event.preventDefault();
+
+  let name = document.getElementById("name").value;
+  let phone = document.getElementById("phone").value;
+  let fromCity = document.getElementById("fromCity").value;
+  let toStation = document.getElementById("toStation").value;
+  let parcelDetails = document.getElementById("parcelDetails").value;
+
+  let message = 
+    "📦 *New Parcel Enquiry* %0A%0A" +
+    "*Name:* " + name + "%0A" +
+    "*Phone:* " + phone + "%0A" +
+    "*From:* " + fromCity + "%0A" +
+    "*To:* " + toStation + "%0A" +
+    "*Parcel Details:* " + parcelDetails;
+
+  let phoneNumber = "919277414141"; // Example: 919277414141
+
+  // WhatsApp API Link
+  let url = "https://wa.me/" + phoneNumber + "?text=" + message;
+
+  window.open(url, "_blank");
+}
+</script>
+
+
+</body>
+</html>
